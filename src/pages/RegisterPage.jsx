@@ -64,14 +64,14 @@ const RegisterPage = () => {
                 <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1">Nombre Completo</label>
                     <div className="relative">
-                        <User className="w-5 h-5 absolute left-3 top-2.5 text-slate-400" />
+                        <User className="w-5 h-5 absolute left-3 top-2.5 text-slate-400 z-10" />
                         <input
                             type="text"
                             name="name"
                             value={formData.name}
                             onChange={handleChange}
                             placeholder="Juan Pérez"
-                            className="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                            className="w-full pl-10 pr-4 py-2 bg-white text-slate-900 placeholder-slate-400 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none autofill:shadow-[0_0_0_30px_white_inset] autofill:text-slate-900"
                             required
                         />
                     </div>
@@ -80,14 +80,14 @@ const RegisterPage = () => {
                 <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1">Correo Electrónico</label>
                     <div className="relative">
-                        <Mail className="w-5 h-5 absolute left-3 top-2.5 text-slate-400" />
+                        <Mail className="w-5 h-5 absolute left-3 top-2.5 text-slate-400 z-10" />
                         <input
                             type="email"
                             name="email"
                             value={formData.email}
                             onChange={handleChange}
                             placeholder="correo@ejemplo.com"
-                            className="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                            className="w-full pl-10 pr-4 py-2 bg-white text-slate-900 placeholder-slate-400 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none autofill:shadow-[0_0_0_30px_white_inset] autofill:text-slate-900"
                             required
                         />
                     </div>
@@ -96,14 +96,14 @@ const RegisterPage = () => {
                 <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1">Contraseña</label>
                     <div className="relative">
-                        <Lock className="w-5 h-5 absolute left-3 top-2.5 text-slate-400" />
+                        <Lock className="w-5 h-5 absolute left-3 top-2.5 text-slate-400 z-10" />
                         <input
                             type="password"
                             name="password"
                             value={formData.password}
                             onChange={handleChange}
                             placeholder="Mínimo 6 caracteres"
-                            className="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                            className="w-full pl-10 pr-4 py-2 bg-white text-slate-900 placeholder-slate-400 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none autofill:shadow-[0_0_0_30px_white_inset] autofill:text-slate-900"
                             required
                         />
                     </div>
@@ -112,14 +112,14 @@ const RegisterPage = () => {
                 <div>
                     <label className="block text-sm font-medium text-slate-700 mb-1">Confirmar Contraseña</label>
                     <div className="relative">
-                        <Lock className="w-5 h-5 absolute left-3 top-2.5 text-slate-400" />
+                        <Lock className="w-5 h-5 absolute left-3 top-2.5 text-slate-400 z-10" />
                         <input
                             type="password"
                             name="confirmPassword"
                             value={formData.confirmPassword}
                             onChange={handleChange}
                             placeholder="Repetí tu contraseña"
-                            className="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+                            className="w-full pl-10 pr-4 py-2 bg-white text-slate-900 placeholder-slate-400 border border-slate-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none autofill:shadow-[0_0_0_30px_white_inset] autofill:text-slate-900"
                             required
                         />
                     </div>
@@ -128,7 +128,7 @@ const RegisterPage = () => {
                 <button
                     type="submit"
                     disabled={loading}
-                    className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2.5 rounded-lg transition-colors disabled:opacity-50"
+                    className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2.5 rounded-lg transition-colors disabled:opacity-50 mt-2"
                 >
                     {loading ? 'Registrando...' : 'Registrarse'}
                 </button>
